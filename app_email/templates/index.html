@@ -1,0 +1,14 @@
+{% load crispy_forms_tags %}
+
+<h1 >Отправка письма</h1>
+
+<form method="post" novalidate>
+    {% csrf_token %}
+    <div>
+        <div>
+            {{ form.interval|as_crispy_field }}
+            {{ form.message|as_crispy_field }}
+        </div>
+    </div>
+    <button type="submit">Отправить</button>
+</form>

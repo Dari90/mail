@@ -1,0 +1,23 @@
+<h1> Список писем </h1>
+<table>
+    <thead>
+    <tr>
+        <th>№</th>
+        <th>Сообщение</th>
+        <th>Интервал</th>
+        <th>Отправлено</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for mail in mail_list %}
+    <tr>
+        <th>{{ mail.id }}</th>
+        <td>{{ mail.message }}</td>
+        <td>{{ mail.interval }}</td>
+        <td>{{ mail.sent }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
