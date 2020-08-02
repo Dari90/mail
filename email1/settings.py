@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@s^#ulug3)b_e8_115*y%fpwf4!m0t)+g1c#&9dr(h_k0r5x^w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [['https://email1299.herokuapp.com', 'email1299.herokuapp.com']]
+ALLOWED_HOSTS = ['*']
 
 
 
